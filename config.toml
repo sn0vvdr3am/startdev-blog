@@ -1,0 +1,85 @@
+baseURL = "https://www.startdev.top"
+title = "StartDev Blog"
+subtitle = "StartDev Record And Share"
+keywords = "java,spring,python,rust,go,mysql,sql,linux,git,架构,前端,后端,原创,编程,开发,算法,运维,云计算,网络,互联网"
+languageCode = "zh-cn" # html的lang属性值
+DefaultContentLanguage = "zh-cn" # 默认内容语言用于选择i18n语言模板
+theme = "hello-friend-ng"
+
+copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+readOtherPosts = "Read other posts"
+pygmentsCodeFencesGuessSyntax = true 
+pygmentsCodeFences = true
+disqusShortname = "startdev-blog"
+canonifyURLs = true # 启用将相对URL转换为绝对URL
+enableGitInfo = true # 使能git信息
+summaryLength = 70
+hasCJKLanguage = true
+
+[author]
+  name   = "StartDev"
+  email  = "sn0vvdr3am@outlook.com"
+
+[taxonomies]
+  tag = "tags"
+
+# 自定义成参数和主题设置
+[params]
+  dateform        = "2006-01-02"
+  dateformShort   = "2006-01-02"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # 首页配置
+  homeSubtitle    = "Software Engineer // DevOps"
+
+  # Metadata mostly used in document's head
+  description = "StartDev Record And Share"
+  keywords = "java,spring,python,rust,go,mysql,sql,linux,git,架构,前端,后端,原创,编程,开发,算法,运维,云计算,网络,互联网"
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+  # 自定义CSS
+  customCSS = ['/css/main.css']
+
+  # 自定义JS
+  # customJS = ['/js/anchorforid.js', '/js/fuse.min.js', '/js/search.js']
+  customJS = ['/js/anchorforid.js', '/js/main.js']
+
+  gitUrl = 'https://github.com/sn0vvdr3am/startdev-blog/commit/'
+
+  # 首页社交配置
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/sn0vvdr3am"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:sn0vvdr3am@outlook.com"
+
+  [params.logo]
+    logoText = "$cd /home/startdev"
+    logoHomeLink = "/"
+
+  [menu]
+    [[menu.main]]
+      identifier = "about"
+      name       = "About"
+      url        = "/about"
+    [[menu.main]]
+      identifier = "blog"
+      name       = "Blog"
+      url        = "/posts"
+    [[menu.main]]
+      identifier = "tag"
+      name       = "Tags"
+      url        = "/tags"
+    [[menu.main]]
+      identifier = "series"
+      name       = "Series"
+      url        = "/series"
+
